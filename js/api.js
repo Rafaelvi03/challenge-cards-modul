@@ -8,7 +8,7 @@ const getKoders = async () => {
     console.log(data)
     return data;
 };
-console.log(getKoders)
+
 const deleteKoder = async () => {
     let response = await fetch(
         `${URLAPI}`,
@@ -19,4 +19,4 @@ const deleteKoder = async () => {
     let data = await response.json();
     return data;
 };
-export { getKoders, deleteKoder, URLAPI }
+export { getKoders, deleteKoder }
