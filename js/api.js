@@ -1,4 +1,4 @@
-const URLAPI = "https://randomuser.me/api/?results=50&inc=gender,name,nat,dob,picture,phone"
+const URLAPI = "https://randomuser.me/api/?results=48&inc=gender,name,nat,dob,picture,phone"
 
 const getKoders = async () => {
     let response = await fetch(
@@ -8,7 +8,6 @@ const getKoders = async () => {
     console.log(data)
     return data;
 };
-
 const deleteKoder = async () => {
     let response = await fetch(
         `${URLAPI}`,
